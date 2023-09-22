@@ -7,9 +7,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: ls
+        run: cat abs >> test.txt
       - name: Run a one-line script
-        run: ls -a
+        run: |
+          git add test.txt
+          git commit -m "ok test"
+          git push origin main
       - name: Run a one-line script
         run: tree -a
       - name: run script
