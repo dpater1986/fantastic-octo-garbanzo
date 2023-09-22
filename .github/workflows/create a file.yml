@@ -7,6 +7,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: ls
+      - name: Run a one-line script
+        run: ls -a
+      - name: Run a one-line script
+        run: tree
       - name: run script
         run: bash .github/workflows/createfile.sh
