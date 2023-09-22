@@ -15,8 +15,8 @@ jobs:
 
       # You can make whatever type of change to the repo...
       - run: |
-        mkdir -p ./content/$(date +'%Y')/
-        echo "123 $(date +'%Y')" > ./content/$(date +'%Y')/file3.txt
+          mkdir -p ./content/$(date +'%Y')/
+          echo "123 $(date +'%Y')" > ./content/$(date +'%Y')/file3.txt
 
       # ...and then use the action as you would normally do, but providing the path to the repo
       - uses: EndBug/add-and-commit@v9
