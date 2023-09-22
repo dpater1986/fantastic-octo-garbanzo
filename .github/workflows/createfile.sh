@@ -1,2 +1,3 @@
 #!/bin/bash
-echo ola
+
+ls
