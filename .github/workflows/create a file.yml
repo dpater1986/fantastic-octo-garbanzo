@@ -11,7 +11,7 @@ jobs:
       # If you need to, you can check out your repo to a different location
       - uses: actions/checkout@v3
         with:
-          path: './content/'
+          path: './'
 
       # You can make whatever type of change to the repo...
       - run: echo "123" > ./content/file2.txt
