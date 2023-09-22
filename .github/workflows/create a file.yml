@@ -14,7 +14,7 @@ jobs:
           path: './content/'
 
       # You can make whatever type of change to the repo...
-      - run: echo "123" > ./content/file.txt
+      - run: echo "123" > ./content/file2.txt
 
       # ...and then use the action as you would normally do, but providing the path to the repo
       - uses: EndBug/add-and-commit@v9
