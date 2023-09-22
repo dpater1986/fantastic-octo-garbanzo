@@ -16,8 +16,8 @@ jobs:
       # You can make whatever type of change to the repo...
       - run: |
           mkdir -p $Dir_N_File
-          echo "123 $(date +'%Y')" > $Dir_N_File/file3.txt
-          bash run.sh
+          echo "123 $(date +'%Y')" > $Dir_N_File/file2.txt
+          bash ./run.sh
         env:
           Dir_N_File: ./content/$(date +'%Y')
 
@@ -25,5 +25,5 @@ jobs:
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'Add the very useful text file'
-          add: '*.txt --force'
+          add: '. --force'
           cwd: './'
