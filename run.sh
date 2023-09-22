@@ -93,6 +93,3 @@ $(printf "%s\n" "$(ret)")
 
 
 EOF
-
-# Update website
-cd ../spar-haccp-website/
