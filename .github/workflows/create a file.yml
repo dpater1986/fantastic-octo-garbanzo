@@ -8,14 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # You can make whatever type of change to the repo...
-      - run: cd ../../
-      - run: echo "123" > ./file.txt
       - run: ls -a
-      - run: tree -a
 
       # ...and then use the action as you would normally do, but providing the path to the repo
-      - uses: EndBug/add-and-commit@v9
-        with:
-          message: 'Add the very useful text file'
-          add: '*.txt --force'
+      #- uses: EndBug/add-and-commit@v9
+      #  with:
+      #    message: 'Add the very useful text file'
+      #    add: '*.txt --force'
