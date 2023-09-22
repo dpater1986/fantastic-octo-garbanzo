@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a one-line script
-        run: cat abs >> test.txt
+        run: cat abs > test.txt
       - name: Run a one-line script
         run: |
           git add test.txt
