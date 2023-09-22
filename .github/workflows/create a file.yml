@@ -9,7 +9,9 @@ jobs:
 
     steps:
       # You can make whatever type of change to the repo...
+      - run: ls -a
       - run: echo "123" > ./file.txt
+      - run: ls -a
 
       # ...and then use the action as you would normally do, but providing the path to the repo
       - uses: EndBug/add-and-commit@v9
