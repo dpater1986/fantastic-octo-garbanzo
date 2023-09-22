@@ -70,7 +70,7 @@ ret () {
     done
 }
 
-path="../spar-haccp-website/content/haccp/${set_date[1]}/"
+path="./content/haccp/${set_date[1]}/"
 mkdir -p $path
 cat > "$path${set_date[5]}-ontvangst.md" <<-EOF
 ---
