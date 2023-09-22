@@ -9,7 +9,7 @@ jobs:
 
     steps:
       # You can make whatever type of change to the repo...
-      - run: ls -a
+      - run: cd ../
       - run: echo "123" > ./file.txt
       - run: ls -a
 
