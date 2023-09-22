@@ -10,6 +10,8 @@ jobs:
         run: echo "dit is een leuke test" > test.txt
       - name: Run a one-line script
         run: |
+          git config --global user.email "d.pater1986@gmail.com"
+          git config --global user.name "Dennis Pater"
           git add test.txt
           git commit -m "ok test"
           git push origin main
