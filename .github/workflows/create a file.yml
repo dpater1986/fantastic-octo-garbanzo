@@ -1,6 +1,5 @@
-name: create file
-on:
-  workflow_dispatch:
+name: Use a different repository directory
+on: push
 
 jobs:
   run:
@@ -8,15 +7,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: ls -a
-      - run: |
-          echo ${PWD}
-          cd ../
-          echo ${PWD}
-          ls -a
+      # If you need to, you can check out your repo to a different location
+      - uses: actions/checkout@v3
+        with:
+          path: './pathToRepo/'
+
+      # You can make whatever type of change to the repo...
+      - run: echo "123" > ./pathToRepo/file.txt
 
       # ...and then use the action as you would normally do, but providing the path to the repo
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'Add the very useful text file'
           add: '*.txt --force'
+          cwd: './pathToRepo/'
