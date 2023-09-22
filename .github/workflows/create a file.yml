@@ -11,6 +11,9 @@ jobs:
       - run: ls -a
       - run: |
           echo ${PWD}
+          cd ../
+          echo ${PWD}
+          ls -a
 
       # ...and then use the action as you would normally do, but providing the path to the repo
       #- uses: EndBug/add-and-commit@v9
