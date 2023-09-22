@@ -16,7 +16,7 @@ jobs:
           ls -a
 
       # ...and then use the action as you would normally do, but providing the path to the repo
-      #- uses: EndBug/add-and-commit@v9
-      #  with:
-      #    message: 'Add the very useful text file'
-      #    add: '*.txt --force'
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Add the very useful text file'
+          add: '*.txt --force'
