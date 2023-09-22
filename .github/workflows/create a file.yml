@@ -16,8 +16,8 @@ jobs:
           Dir_N_File: ./content/$(date +'%Y')
       # You can make whatever type of change to the repo...
       - run: |
-          mkdir -P $Dir_N_File
-          echo "123 $(date +'%Y')" > $Dir_N_File/file2.txt
+          mkdir -P ${{ env.Dir_N_File }}
+          echo "123 $(date +'%Y')" > ${{ env.Dir_N_File }}/file2.txt
           bash ./run.sh
 
 
